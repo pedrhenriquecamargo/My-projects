@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta para Clara</title>
+    <link rel="stylesheet" href="/css/cla.css">
+</head>
+
+<style>
+    body {
+        background-color: #9032bb;
+    }
+</style>
+
+<body>
+    <h1>O Gustavo te considera importante para ele?</h1>
+    <div>
+        <button onmouseover="desvia(this)" id="Sim">Sim</button><button onclick="não ()" id="não">Não</button>
+    </div>
+</body>
+
+<script>
+    function não() {
+        alert("Então olha só!");
+        window.location.href = "https://memoryiit.com/14100fd2-Clara-perfeita";
+    }
+
+
+    function desvia(t) {
+        var btn = t;
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosição(0, 100);
+        btn.style.left = geraPosição(0, 100);
+        console.log("opa, desviei...");
+    }
+
+
+
+    function geraPosição(min, max) {
+        return Math.random() * (max - min) + '%';
+    }
+</script>
+
+</html>
